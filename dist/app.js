@@ -1,8 +1,8 @@
 'use strict';
-var axios = require("axios")["default"];
-exports.handler = function (event) {
+const axios = require("axios").default;
+exports.handler = (event) => {
     if (!event.queryStringParameters || !event.queryStringParameters.url) {
-        var response = {
+        let response = {
             statusCode: 200,
             headers: {
                 "content-type": "text/plain; charset=utf-8"
@@ -12,7 +12,7 @@ exports.handler = function (event) {
         return (Promise.resolve(response));
     }
     else {
-        var url = event.queryStringParameters.url;
+        const url = event.queryStringParameters.url;
         return call(url);
     }
 };
@@ -20,16 +20,17 @@ function call(url) {
     console.log("Getting:" + url);
     return axios
         .get(url)
-        .then(function (response) {
+        .then((response) => {
         console.log("Got content for:" + url);
         return {
             statusCode: 200,
             headers: {
                 "content-type": "text/plain; charset=utf-8"
             },
-            body: response
+            body: response.data
         };
-    })["catch"](function (error) {
+    })
+        .catch((error) => {
         return {
             statusCode: 500,
             headers: {
@@ -39,3 +40,4 @@ function call(url) {
         };
     });
 }
+//# sourceMappingURL=app.js.map

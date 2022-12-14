@@ -29,7 +29,7 @@ function call(url: string) {
                 headers: {
                     "content-type": "text/plain; charset=utf-8"
                 },
-                body: response
+                body: response.data
             };
         })
         .catch((error: Error) => {
