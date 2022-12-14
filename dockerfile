@@ -1,5 +1,5 @@
 FROM public.ecr.aws/lambda/nodejs:12
 COPY package*.json ./
-COPY src/*.js ./
+COPY dist/*.js ./
 RUN npm install
 CMD [ "app.handler" ]
