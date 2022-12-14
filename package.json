@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "axios": "^1.2.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.1",
+    "@types/node": "^18.11.15",
+    "typescript": "^4.9.4"
+  },
+  "name": "aws-byui-lab-sample-lambda",
+  "description": "��#\u0000 \u0000a\u0000w\u0000s\u0000-\u0000b\u0000y\u0000u\u0000i\u0000-\u0000l\u0000a\u0000b\u0000-\u0000s\u0000a\u0000m\u0000p\u0000l\u0000e\u0000-\u0000l\u0000a\u0000m\u0000b\u0000d\u0000a\u0000\r\u0000 \u0000",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blaineh-byu/aws-byui-lab-sample-lambda.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blaineh-byu/aws-byui-lab-sample-lambda/issues"
+  },
+  "homepage": "https://github.com/blaineh-byu/aws-byui-lab-sample-lambda#readme"
+}
